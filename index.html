@@ -49,7 +49,7 @@ $(document).bind('pageinit', function() {
   $( "#button1" ).bind( "click", function(event, ui) {
 	var q = $("#text1").val();
 	alert("Click "+q);
-	var jsonUrl = "http://localhost:3001/quote/"+q;
+	var jsonUrl = "http://localhost:5541/quote/"+q;
 	alert("Fetching result from "+jsonUrl);
 	$.get(jsonUrl, function(data) {
   	alert(data.author);
